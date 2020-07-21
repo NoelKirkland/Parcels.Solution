@@ -2,4 +2,8 @@
 
 <h1>Here are the details of your package</h1>
 
-@Model.Volume
+<p>This is the volume of your package:</p>
+@Model.Volume()
+<br>
+<p>This is the cost of your package:</p>
+@Model.CostToShip(Model.Volume())

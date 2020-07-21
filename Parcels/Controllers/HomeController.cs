@@ -22,7 +22,7 @@ namespace Parcels.Controllers
       public ActionResult Create(int height, int width, int length, int weight)
       {
         Parcel newParcel = new Parcel(height, width, length, weight);
-        return RedirectToAction("ItemDetails");
+        return View("ItemDetails", newParcel);
       }
     }
 }
