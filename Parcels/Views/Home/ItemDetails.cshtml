@@ -2,8 +2,17 @@
 
 <h1>Here are the details of your package</h1>
 
+<p>The height of your package is: @Model.Height</p>
+<p>The width of your package is: @Model.Width</p>
+<p>The length of your package is: @Model.Length</p>
+<p>The weight of your package is: @Model.Weight</p>
+
 <p>This is the volume of your package:</p>
 @Model.Volume()
 <br>
 <p>This is the cost of your package:</p>
 @Model.CostToShip(Model.Volume())
+<br>
+<br>
+<br>
+<a href="/">Back to home</a>

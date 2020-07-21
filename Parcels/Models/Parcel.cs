@@ -27,17 +27,8 @@ namespace Parcels.Models
   
     public int CostToShip(int volume)
     {
-      int cost = 0;
-
-      if (volume <= 5)
-      {
-        cost += 5;
-        return cost;
-      }
-      else
-      {
-        return cost;
-      }
+      int cost = volume * 2;
+      return cost;
     }
   
   }
